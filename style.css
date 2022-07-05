@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:url(background2.png) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 85vh;
+    margin: 15px ;
+    
+}
+header{
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    top: -8rem;
+    height: 5rem;
+    background-color: transparent;
+    justify-content: center;
+
+}
+
+.navlinks{
+    justify-content: center;
+    display: inline-flex;
+    gap:100px;
+    margin: 0 20px 0 0;
+    align-items: center;
+    font-size: 20px;
+    color: #aaa;
+    margin: 0 4rem;
+    opacity: 1;
+    
+}
+
+
+
+.cbc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    margin-top: 80px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+    transform: rotateY(20deg) skewX(-2deg);
+    transition: transform 0.5s, box-shadow 0.5s;
+  
+}
+.cbc button{
+    width: 150px;
+    background-color: rgb(164, 164, 180);
+    background-color: transparent;
+    margin: 10px;
+    padding: 6px;
+    border: 1px solid #a78f57;
+    border-radius: 12px;
+    font-size: 15px;
+    color: aliceblue;
+    cursor: pointer;
+}
+.cbc:hover{
+    transform: rotateY(20deg) skewX(-2deg) translateY(-2rem);
+    box-shadow: 2rem 2rem 2rem #000;
+}
+.cbc::before{
+    content: "";
+    height: 100%;
+    width: 1rem;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    transform: skewY(45deg);
+    transform-origin: right;
+    box-shadow: -0.1rem -0.1rem 0.1rem transparent;
+}
+.cbc::after{
+    content: "";
+    height: 1rem;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    transform: skewX(45deg);
+    transform-origin: bottom;
+    box-shadow: -0.1rem -0.1rem 0.1rem transparent ;
+}
